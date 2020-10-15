@@ -1,11 +1,3 @@
-target:test.c mstr.c bit_oprtn.c num_oprtn.c
-	gcc test.c mstr.c bit_oprtn.c num_oprtn.c -o all.out
-run:all.out
-	./all.out
-clean:
-	rm all.out
-
-
 # Name of the project
 PROJECT_NAME = print
 
@@ -25,7 +17,7 @@ test.c\
 #TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
-INC	= .
+INC	= -I
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
